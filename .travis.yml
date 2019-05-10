@@ -2,7 +2,6 @@ os: linux
 language: C
 script:
   - make
-  - make test
   - cd bin
   - ./geometry_test
   - git ls-files src/ | xargs clang-format -i && git diff --exit-code
